@@ -18,6 +18,12 @@ For Windows users, the process involves a few additional steps, ensuring a smoot
 
 3. **Utilize Docker Image:** Windows users can access Ollama by using the Docker image provided here: [Ollama Docker Image](https://hub.docker.com/r/ollama/ollama).
 
+Run Docker-Container:
+
+```
+docker run -d -v ollama:/root/.ollama -p 11435:11434 -p 8501:8501 --name llama3 ollama/ollama
+```
+
 Now you can easily use Llama3 in the command line (CMD) using the following command:
 
 ```
