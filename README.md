@@ -21,7 +21,6 @@ For Windows users, the process involves a few additional steps, ensuring a smoot
 Now you can easily use Llama3 in the command line (CMD) using the following command:
 
 ```
-docker run -d -v ollama:/root/.ollama -p 11435:11434 -p 8501:8501 --name llama3 ollama/ollama
 docker exec -it llama3 ollama run llama3
 ```
 ## Usage
