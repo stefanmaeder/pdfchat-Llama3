@@ -18,13 +18,14 @@ For Windows users, the process involves a few additional steps, ensuring a smoot
 
 3. **Utilize Docker Image:** Windows users can access Ollama by using the Docker image provided here: [Ollama Docker Image](https://hub.docker.com/r/ollama/ollama).
 
-Now you can easily use Mistral in the command line (CMD) using the following command:
+Now you can easily use Llama3 in the command line (CMD) using the following command:
 
 ```
+docker run -d -v ollama:/root/.ollama -p 11435:11434 -p 8501:8501 --name llama3 ollama/ollama
 docker exec -it ollama ollama run llama3
 ```
 ## Usage
-#### NOTE: First install Ollama in docker and run mistral as stated above
+#### NOTE: First install Ollama in docker and run Llama3 as stated above
 
 0. Prepare the system:
    
