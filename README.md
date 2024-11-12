@@ -26,7 +26,7 @@ docker exec -it ollama ollama run llama3
 ## Usage
 #### NOTE: First install Ollama in docker and run mistral as stated above
 
-1. Prepare system:
+0. Prepare system:
    
  ```
  apt update
@@ -36,7 +36,7 @@ docker exec -it ollama ollama run llama3
 1. Clone this repository:
    
  ```
- git clone https://github.com/SonicWarrior1/pdfchat.git
+ git clone https://github.com/stefanmaeder/pdfchat-Llama3/pdfchat.git
  ```
 2. Install all the depenedencies :
    
