@@ -22,7 +22,7 @@ Now you can easily use Llama3 in the command line (CMD) using the following comm
 
 ```
 docker run -d -v ollama:/root/.ollama -p 11435:11434 -p 8501:8501 --name llama3 ollama/ollama
-docker exec -it ollama ollama run llama3
+docker exec -it llama3 ollama run llama3
 ```
 ## Usage
 #### NOTE: First install Ollama in docker and run Llama3 as stated above
