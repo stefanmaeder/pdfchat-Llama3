@@ -12,6 +12,8 @@ import streamlit as st
 import os
 import time
 
+MODEL = 'llama3'
+
 if not os.path.exists('files'):
     os.mkdir('files')
 
@@ -39,11 +41,11 @@ if 'memory' not in st.session_state:
 if 'vectorstore' not in st.session_state:
     st.session_state.vectorstore = Chroma(persist_directory='jj',
                                           embedding_function=OllamaEmbeddings(base_url='http://localhost:11434',
-                                                                              model="mistral")
+                                                                              model=MODEL)
                                           )
 if 'llm' not in st.session_state:
     st.session_state.llm = Ollama(base_url="http://localhost:11434",
-                                  model="mistral",
+                                  model=MODEL,
                                   verbose=True,
                                   callback_manager=CallbackManager(
                                       [StreamingStdOutCallbackHandler()]),
@@ -83,7 +85,7 @@ if uploaded_file is not None:
             # Create and persist the vector store
             st.session_state.vectorstore = Chroma.from_documents(
                 documents=all_splits,
-                embedding=OllamaEmbeddings(model="mistral")
+                embedding=OllamaEmbeddings(model=MODEL)
             )
             st.session_state.vectorstore.persist()
 
