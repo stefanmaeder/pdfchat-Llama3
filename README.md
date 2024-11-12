@@ -27,6 +27,12 @@ docker exec -it llama3 ollama run llama3
 ## Usage
 #### NOTE: First install Ollama in docker and run Llama3 as stated above
 
+-1. Get in the shell
+
+ ```
+ docker exec -it llama3 sh
+ ```
+
 0. Prepare the system:
    
  ```
