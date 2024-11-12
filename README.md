@@ -43,12 +43,13 @@ docker exec -it llama3 ollama run llama3
 1. Clone this repository:
    
  ```
+ cd
  git clone https://github.com/stefanmaeder/pdfchat-Llama3.git
  ```
 2. Install all the depenedencies :
    
 ```
-cd pdfchat
+cd pdfchat-Llama3
 pip install -r requirements.txt
 ```
 3. Open terminal and run the following command:
